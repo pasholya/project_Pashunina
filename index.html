@@ -4,39 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>18 век:сквозь призму времени</title>
+    <title>18 век:сквозь призму времени</title> 
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
 </head>
-
 <body>
     <header class="header">
         <img class="header__logo" src="" alt="Логотип" width="" height="">
         <h1 class="header__title">История России (Сквозь призму времени: 18 век в России)</h1>
-        <nav class="header___menu">
-            <ul class="header__list">
-                <li class="header__item"><a class="header__link" href="">[хронологическая карта</a></li>
-                <li><a href="">важные личности</a></li>
-                <li><a href="">статьи</a></li>
-                <li><a href="">запись на занятие</a></li>
-                <li><a href=""><img src="images/icons8-people-64.png" alt="Иконка входа" width="15" height="15"></a>
-                <li><a href=""><img src="images/icons8_lupa.png" alt="Поиск" width="20" height="20"></a>
+        <nav class="header___menu menu">
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="">[хронологическая карта</a></li>
+                <li class="menu__item"><a class="menu__link" href="">важные личности</a></li>
+                <li class="menu__item"><a class="menu__link" href="">статьи</a></li>
+                <li class="menu__item"><a class="menu__link" href="">запись на занятие</a></li>
             </ul>
         </nav>
+        <a class="header__btn"  href="/#"><img src="images/icons8-people-64.png" alt="Иконка входа" width="15" height="15"></a>
+        <a class="header__btn" href="/#"><img src="images/icons8_lupa.png" alt="Поиск" width="20" height="20"> </a>
     </header>
         <main>
-            <section>
-                <img src="images/karamzin.jpg" alt="слайдер с историками">
+            <section class="historians">
+                <img class="historians__img" src="images/karamzin.jpg" alt="слайдер с историками">
             </section>
-            <section>
-                <img src="images/history.jpg" alt="лучшие статьи">
+            <section class="articles">
+                <img class="articles__img" src="images/history.jpg" alt="лучшие статьи">
             </section>
-            <section>
+            <section class="advertisement">
                 <ul>
-                    <img src="images/reklama.jpg" alt="реклама 1" width="50" height="50">
-                    <img src="images/reklama.jpg" alt="реклама 2" width="50" height="50">
-                    <img src="images/reklama.jpg" alt="реклама 3" width="50" height="50">
+                    <img class="advertisement__item" src="images/reklama.jpg" alt="реклама" width="50" height="50">
+                    <img class="advertisement__item" src="images/reklama.jpg" alt="реклама" width="50" height="50">
+                    <img class="advertisement__item" src="images/reklama.jpg" alt="реклама" width="50" height="50">
                 </ul>
             </section>
-            <section>
+            <section class="mailing">
                 <form action="обработчик подписки" method="post">
                     <label for="email">подпишитесь на нашу рассылку:</label>
                     <input type="email" name="email" placeholder="введите ваш email" required>
@@ -44,7 +45,7 @@
                 </form>
             </section>
         </main>
-        <footer>
+        <footer class="footer">
             <p> Сайт создан Пашуниной Ольгой группа ОБ-22 </p>
             <ul>
                 <li><a href="#"> политика конфиденциальности</a></li>
