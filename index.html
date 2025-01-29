@@ -10,7 +10,7 @@
 </head>
 <body>
     <header class="header">
-        <img class="header__logo" src="" alt="Логотип" width="" height="">
+        <img class="header__logo" src="images/icons8-история-50.png" alt="Логотип" width="50" height="50">
         <h1 class="header__title">История России (Сквозь призму времени: 18 век в России)</h1>
         <nav class="header___menu menu">
             <ul class="menu__list">
@@ -20,37 +20,46 @@
                 <li class="menu__item"><a class="menu__link" href="">запись на занятие</a></li>
             </ul>
         </nav>
-        <a class="header__btn"  href="/#"><img src="images/icons8-people-64.png" alt="Иконка входа" width="15" height="15"></a>
-        <a class="header__btn" href="/#"><img src="images/icons8_lupa.png" alt="Поиск" width="20" height="20"> </a>
+        <a class="header__btn"  href="/#"><img class="header__link" src="images/icons8-people-64.png" alt="Иконка входа" width="15" height="15"></a>
+        <a class="header__btn" href="/#"><img class="header__link" src="images/icons8_lupa.png" alt="Поиск" width="20" height="20"> </a>
     </header>
         <main>
             <section class="historians">
-                <img class="historians__img" src="images/karamzin.jpg" alt="слайдер с историками">
+                <ul class="historians__list">
+                  <li class="historians"><img  class="historians__slider" src="images/miller.jpg"    alt="слайдер с историками 1" width="150" height="150" ></li> 
+                  <li class="historians"><img  class="historians__slider" src="images/karamzin.jpg"  alt="слайдер с историками 2" width="150" height="150" ></li>
+                  <li class="historians"><img  class="historians__slider" src="images/sherbatov.jpg" alt="слайдер с историками 3" width="150" height="150" ></li>
+                  <li class="historians"><img  class="historians__slider" src="images/shlecer.jpg"   alt="слайдер с историками 4" width="150" height="150" ></li>
+                  <li class="historians"><img  class="historians__slider" src="images/tatishev.jpg"  alt="слайдер с историками 5" width="150" height="150" ></li>
+                </ul>
             </section>
             <section class="articles">
-                <img class="articles__img" src="images/history.jpg" alt="лучшие статьи">
+                <img class="articles__img" src="images/dvoryanstvo.jpg" alt="лучшие статья 1" width="150" height="150">
+                <img class="articles__img" src="images/kate2.jpg"       alt="лучшие статья 2" width="150" height="150">
+                <img class="articles__img" src="images/iscusstvo.jpg"   alt="лучшие статья 3" width="150" height="150">
+                <img class="articles__img" src="images/history.jpg"     alt="лучшие статья 4" width="150" height="150">
             </section>
             <section class="advertisement">
-                <ul>
-                    <img class="advertisement__item" src="images/reklama.jpg" alt="реклама" width="50" height="50">
-                    <img class="advertisement__item" src="images/reklama.jpg" alt="реклама" width="50" height="50">
-                    <img class="advertisement__item" src="images/reklama.jpg" alt="реклама" width="50" height="50">
+                <ul class="advertisement__list">
+                    <li class="advertisement__list"><img class="advertisement__item" src="images/reklama.jpg" alt="реклама" width="50" height="50"></li> 
+                    <li class="advertisement__list"><img class="advertisement__item" src="images/reklama.jpg" alt="реклама" width="50" height="50"></li> 
+                    <li class="advertisement__list"><img class="advertisement__item" src="images/reklama.jpg" alt="реклама" width="50" height="50"></li> 
                 </ul>
             </section>
             <section class="mailing">
-                <form action="обработчик подписки" method="post">
-                    <label for="email">подпишитесь на нашу рассылку:</label>
-                    <input type="email" name="email" placeholder="введите ваш email" required>
-                    <button type="submit">подписаться</button>
+                <form class="mailing__form" action="#" method="post">
+                    <label class="mailing__label" for="email">подпишитесь на нашу рассылку:</label>
+                    <input class="mailing__input" type="email" id="email" name="email" placeholder="введите ваш email" required>
+                    <button class="mailing__button" type="submit">подписаться</button>
                 </form>
             </section>
         </main>
         <footer class="footer">
-            <p> Сайт создан Пашуниной Ольгой группа ОБ-22 </p>
-            <ul>
-                <li><a href="#"> политика конфиденциальности</a></li>
-                <li><a href="#"> контакты </a></li>
-                <li><a href="#"> team </a></li>
+            <p class="footer__текст">  Сайт создан Пашуниной Ольгой группа ОБ-22 </p>
+            <ul class="footer__list">
+                <li class="footer__item"><a class="footer__link" href="#"> политика конфиденциальности</a></li>
+                <li class="footer__item"><a class="footer__link" href="#"> контакты </a></li>
+                <li class="footer__item"><a class="footer__link" href="#"> team </a></li>
             </ul>
         </footer>
 
