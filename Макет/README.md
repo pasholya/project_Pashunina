@@ -1,0 +1,1 @@
+[ссылка на мой макет]: https://excalidraw.com/#json=Wc5h0SDKRynGHuq7ztdIZ,__51-bZIbUQwZMtsaQZCww

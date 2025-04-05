@@ -1,0 +1,44 @@
+.header__logo{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.header__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px; 
+}
+.header__search{
+    padding-left: 15px;
+}
+.header__login{
+    margin-left: auto;
+}
+.header__btn{
+    padding: 15px 20px;
+    background-color: #a889e2;
+    /* border: 1px solid #7a3d3d; */
+    border-radius: 20px;
+}
+.menu__list{
+    font-family: 'RedditMono';
+    font-size: 16px;
+    color: #000000;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  
+}
+.menu__link {
+    text-decoration: none;
+    color: #070000;
+    padding: 15px 20px;
+    background-color: #a889e2;
+    /* border: 1px solid #7a3d3d; */
+    border-radius: 60px;
+
+}

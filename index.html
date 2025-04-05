@@ -4,64 +4,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>18 век:сквозь призму времени</title> 
+    <title>18 век:сквозь призму времени</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
-    <header class="header">
-        <img class="header__logo" src="images/icons8-история-50.png" alt="Логотип" width="50" height="50">
-        <h1 class="header__title">История России (Сквозь призму времени: 18 век в России)</h1>
-        <nav class="header___menu menu">
-            <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="">[хронологическая карта</a></li>
-                <li class="menu__item"><a class="menu__link" href="">важные личности</a></li>
-                <li class="menu__item"><a class="menu__link" href="">статьи</a></li>
-                <li class="menu__item"><a class="menu__link" href="">запись на занятие</a></li>
-            </ul>
-        </nav>
-        <a class="header__btn"  href="/#"><img class="header__link" src="images/icons8-people-64.png" alt="Иконка входа" width="15" height="15"></a>
-        <a class="header__btn" href="/#"><img class="header__link" src="images/icons8_lupa.png" alt="Поиск" width="20" height="20"> </a>
+    <header class="header container">
+        <div class="header__logo" href="index.html">
+            <img class="header__logo" src="images/icons8-история-50.png" alt="Логотип" width="50" height="50">
+            <h1 class="header__title" >Сквозь призму времени: 18 век в России</h1>
+        </div>
+
+        <div class="header__wrapper">
+            <nav class="header___menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="#">хронологическая карта</a></li>
+                    <li class="menu__item"><a class="menu__link" href="person.html">важные личности</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">статьи</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">календарь событий</a></li>
+                </ul>
+            </nav>
+            <a class="header__btn header__login" href="entrance.html"><img class="header__link" src="images/icons8-people-64.png"
+                    alt="Иконка входа" width="20" height="20"></a>
+            <a class="header__btn header__search" href="#"><img class="header__link" src="images/icons8_lupa.png"
+                    alt="Поиск" width="20" height="20"> </a>
+        </div>
     </header>
-        <main>
-            <section class="historians">
-                <ul class="historians__list">
-                  <li class="historians"><img  class="historians__slider" src="images/miller.jpg"    alt="слайдер с историками 1" width="150" height="150" ></li> 
-                  <li class="historians"><img  class="historians__slider" src="images/karamzin.jpg"  alt="слайдер с историками 2" width="150" height="150" ></li>
-                  <li class="historians"><img  class="historians__slider" src="images/sherbatov.jpg" alt="слайдер с историками 3" width="150" height="150" ></li>
-                  <li class="historians"><img  class="historians__slider" src="images/shlecer.jpg"   alt="слайдер с историками 4" width="150" height="150" ></li>
-                  <li class="historians"><img  class="historians__slider" src="images/tatishev.jpg"  alt="слайдер с историками 5" width="150" height="150" ></li>
-                </ul>
-            </section>
-            <section class="articles">
-                <img class="articles__img" src="images/dvoryanstvo.jpg" alt="лучшие статья 1" width="150" height="150">
-                <img class="articles__img" src="images/kate2.jpg"       alt="лучшие статья 2" width="150" height="150">
-                <img class="articles__img" src="images/iscusstvo.jpg"   alt="лучшие статья 3" width="150" height="150">
-                <img class="articles__img" src="images/history.jpg"     alt="лучшие статья 4" width="150" height="150">
-            </section>
-            <section class="advertisement">
-                <ul class="advertisement__list">
-                    <li class="advertisement__list"><img class="advertisement__item" src="images/reklama.jpg" alt="реклама" width="50" height="50"></li> 
-                    <li class="advertisement__list"><img class="advertisement__item" src="images/reklama.jpg" alt="реклама" width="50" height="50"></li> 
-                    <li class="advertisement__list"><img class="advertisement__item" src="images/reklama.jpg" alt="реклама" width="50" height="50"></li> 
-                </ul>
-            </section>
-            <section class="mailing">
-                <form class="mailing__form" action="#" method="post">
-                    <label class="mailing__label" for="email">подпишитесь на нашу рассылку:</label>
-                    <input class="mailing__input" type="email" id="email" name="email" placeholder="введите ваш email" required>
-                    <button class="mailing__button" type="submit">подписаться</button>
-                </form>
-            </section>
-        </main>
-        <footer class="footer">
-            <p class="footer__текст">  Сайт создан Пашуниной Ольгой группа ОБ-22 </p>
-            <ul class="footer__list">
-                <li class="footer__item"><a class="footer__link" href="#"> политика конфиденциальности</a></li>
-                <li class="footer__item"><a class="footer__link" href="#"> контакты </a></li>
-                <li class="footer__item"><a class="footer__link" href="#"> team </a></li>
+    <main class="main container">
+        <section class="historians">
+            <ul class="historians__list">
+                <li class="historians__item"><img class="historians__slid" src="images/miller.jpg"
+                        alt="слайд с историками 1" width="150" height="150"></li>
+                <li class="historians__item"><img class="historians__slid" src="images/karamzin.jpg"
+                        alt="слайд с историками 2" width="150" height="150"></li>
+                <li class="historians__item"><img class="historians__slid" src="images/sherbatov.jpg"
+                        alt="слайд с историками 3" width="150" height="150"></li>
+                <li class="historians__item"><img class="historians__slid" src="images/shlecer.jpg"
+                        alt="слайд с историками 4" width="150" height="150"></li>
+                <li class="historians__item"><img class="historians__slid" src="images/tatishev.jpg"
+                        alt="слайд с историками 5" width="150" height="150"></li>
             </ul>
-        </footer>
+        </section>
+        <section class="articles">
+            <h2 class="articles__title">Лучшие статьи</h2>
+            <ul class="articles__list">
+            <li class="articles__item"><img class="articles__img" src="images/dvoryanstvo.jpg" alt="лучшие статья 1" width="150" height="150"> </li>
+            <li class="articles__item"><img class="articles__img" src="images/kate2.jpg"       alt="лучшие статья 2" width="150" height="150"> </li>
+            <li class="articles__item"><img class="articles__img" src="images/iscusstvo.jpg"   alt="лучшие статья 3" width="150" height="150"> </li>
+            <li class="articles__item"><img class="articles__img" src="images/history.jpg"     alt="лучшие статья 4" width="150" height="150"> </li>
+            </ul>
+        </section>
+        <section class="advertisement">
+            <ul class="advertisement__list">
+                <li class="advertisement__item"><img class="advertisement__image" src="images/reklama.jpg" alt="реклама"
+                        width="1500" height="1500"></li>
+                <li class="advertisement__item"><img class="advertisement__image" src="images/reklama.jpg" alt="реклама"
+                        width="1500" height="1500"></li>
+                <li class="advertisement__item"><img class="advertisement__image" src="images/reklama.jpg" alt="реклама"
+                        width="1500" height="1500"></li>
+            </ul>
+        </section>
+        <section class="mailing">
+            <form class="mailing__form" action="#" method="post">
+                <label class="mailing__label" for="email">подпишитесь на нашу рассылку:</label>
+                <input class="mailing__input" type="email" id="email" name="email" placeholder="введите ваш email"
+                    required>
+                <button class="mailing__button" type="submit">подписаться</button>
+            </form>
+        </section>
+    </main>
+    <footer class="footer container">
+        <p class="footer__text"> Сайт создан Пашуниной Ольгой и Ланцовой Анной группа ОБ-22 </p>
+        <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#"> политика конфиденциальности</a></li>
+            <li class="footer__item"><a class="footer__link" href="#"> контакты </a></li>
+            <li class="footer__item"><a class="footer__link" href="#"> team </a></li>
+        </ul>
+    </footer>
 
 
 </body>

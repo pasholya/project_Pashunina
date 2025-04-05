@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма Входа</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header class="header container">
+        <div class="header__logo">
+            <img class="header__logo" src="images/icons8-история-50.png" alt="Логотип" width="50" height="50">
+            <h1 class="header__title">Сквозь призму времени: 18 век в России</h1>
+        </div>
+    </header>
+    
+    <form action="/login" method="post" class="login-form">
+        <h2>Вход</h2>
+        <label for="username">Логин:</label>
+        <input type="text" id="username" name="username" placeholder="Ваш логин" required>
+        
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Ваш пароль" required>
+        
+        <a href="reset-password.html">Забыли пароль?</a>
+        
+        <button type="submit">Войти</button>
+    </form>
+
+    <footer class="footer container">
+        <p class="footer__text"> Сайт создан Пашуниной Ольгой и Ланцовой Анной группа ОБ-22 </p>
+        <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#"> политика конфиденциальности</a></li>
+            <li class="footer__item"><a class="footer__link" href="#"> контакты </a></li>
+            <li class="footer__item"><a class="footer__link" href="#"> team </a></li>
+        </ul>
+    </footer>
+</body>
+</html>
