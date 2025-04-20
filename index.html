@@ -13,16 +13,18 @@
     <header class="header container">
         <div class="header__logo" href="index.html">
             <img class="header__logo" src="images/icons8-история-50.png" alt="Логотип" width="50" height="50">
-            <h1 class="header__title" >Сквозь призму времени: 18 век в России</h1>
+            <a class="header__link" href="index.html"><h1 class="header__title" >Сквозь призму времени: 18 век в России</h1></a>
         </div>
 
         <div class="header__wrapper">
             <nav class="header___menu menu">
                 <ul class="menu__list">
-                    <li class="menu__item"><a class="menu__link" href="#">хронологическая карта</a></li>
-                    <li class="menu__item"><a class="menu__link" href="person.html">важные личности</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">статьи</a></li>
-                    <li class="menu__item"><a class="menu__link" href="#">календарь событий</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Хронологическая карта</a></li>
+                    <li class="menu__item"><a class="menu__link" href="person.html">Важные личности</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Статьи</a></li>
+                    <li class="menu__item">
+                        <button class="menu__link  "onclick="openModal()">Запись на занятие</button>
+                    </li>
                 </ul>
             </nav>
             <a class="header__btn header__login" href="entrance.html"><img class="header__link" src="images/icons8-people-64.png"
@@ -33,35 +35,34 @@
     </header>
     <main class="main container">
         <section class="historians">
-            <ul class="historians__list">
-                <li class="historians__item"><img class="historians__slid" src="images/miller.jpg"
-                        alt="слайд с историками 1" width="150" height="150"></li>
-                <li class="historians__item"><img class="historians__slid" src="images/karamzin.jpg"
-                        alt="слайд с историками 2" width="150" height="150"></li>
-                <li class="historians__item"><img class="historians__slid" src="images/sherbatov.jpg"
-                        alt="слайд с историками 3" width="150" height="150"></li>
-                <li class="historians__item"><img class="historians__slid" src="images/shlecer.jpg"
-                        alt="слайд с историками 4" width="150" height="150"></li>
-                <li class="historians__item"><img class="historians__slid" src="images/tatishev.jpg"
-                        alt="слайд с историками 5" width="150" height="150"></li>
-            </ul>
+            <button class="slider-button slider-prev">«</button>
+                <ul class="historians__list">
+                    <li class="historians__item active-slide"><img class="historians__slid" src="images/miller.jpg" alt="слайд с историками 1" width="150" height="150"></li>
+                    <li class="historians__item"><img class="historians__slid" src="images/karamzin.jpg"   alt="слайд с историками 2" width="150" height="150"></li>
+                    <li class="historians__item"><img class="historians__slid" src="images/sherbatov.jpg"  alt="слайд с историками 3" width="150" height="150"></li>
+                    <li class="historians__item"><img class="historians__slid" src="images/shlecer.jpg"  alt="слайд с историками 4" width="150" height="150"></li>
+                    <li class="historians__item"><img class="historians__slid" src="images/tatishev.jpg"   alt="слайд с историками 5" width="150" height="150"></li>
+                </ul>
+                <button class="slider-button slider-next">»</button>
         </section>
         <section class="articles">
             <h2 class="articles__title">Лучшие статьи</h2>
+            <button class="slider-control prev">«</button>
             <ul class="articles__list">
             <li class="articles__item"><img class="articles__img" src="images/dvoryanstvo.jpg" alt="лучшие статья 1" width="150" height="150"> </li>
             <li class="articles__item"><img class="articles__img" src="images/kate2.jpg"       alt="лучшие статья 2" width="150" height="150"> </li>
             <li class="articles__item"><img class="articles__img" src="images/iscusstvo.jpg"   alt="лучшие статья 3" width="150" height="150"> </li>
             <li class="articles__item"><img class="articles__img" src="images/history.jpg"     alt="лучшие статья 4" width="150" height="150"> </li>
             </ul>
+            <button class="slider-control next">»</button>
         </section>
         <section class="advertisement">
             <ul class="advertisement__list">
-                <li class="advertisement__item"><img class="advertisement__image" src="images/reklama.jpg" alt="реклама"
+                <li class="advertisement__item"><img class="advertisement__image" src="images/yarmarkaadd.jpg" alt="реклама"
                         width="1500" height="1500"></li>
-                <li class="advertisement__item"><img class="advertisement__image" src="images/reklama.jpg" alt="реклама"
+                <li class="advertisement__item"><img class="advertisement__image" src="images/detskayaadd.jpg" alt="реклама"
                         width="1500" height="1500"></li>
-                <li class="advertisement__item"><img class="advertisement__image" src="images/reklama.jpg" alt="реклама"
+                <li class="advertisement__item"><img class="advertisement__image" src="images/molokoadd.jpg" alt="реклама"
                         width="1500" height="1500"></li>
             </ul>
         </section>
@@ -82,8 +83,23 @@
             <li class="footer__item"><a class="footer__link" href="#"> team </a></li>
         </ul>
     </footer>
+    <script src="scripts/script.js"></script>
 
-
+    <div class="applications" hidden>
+            <section class="application">
+                <div class="application__wrap">
+                 <span class="close" onclick="closeModal()">×</span>
+            <form action="/submit.php" method="POST">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                <label for="phone">Телефон:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+7(___) ___ __ __">
+                <button type="submit">Отправить заявку</button>
+            </form>   
+                </div>
+            </section>
+            
+    </div>
 </body>
 
 </html>

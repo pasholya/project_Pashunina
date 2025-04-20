@@ -21,7 +21,16 @@
     background-color: #a889e2;
     /* border: 1px solid #7a3d3d; */
     border-radius: 20px;
+    object-fit: cover; 
 }
+
+.header__btn:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px 0
+rgba(0,0,0,0.2);
+}
+
+
 .menu__list{
     font-family: 'RedditMono';
     font-size: 16px;
@@ -40,5 +49,16 @@
     background-color: #a889e2;
     /* border: 1px solid #7a3d3d; */
     border-radius: 60px;
+    object-fit: cover; 
+}
 
+.menu__link:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px 0
+rgba(0,0,0,0.2);
+}
+
+.header__link{
+text-decoration: none;
+color: #000000;
 }

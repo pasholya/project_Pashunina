@@ -1,0 +1,26 @@
+@media only screen and (max-width: 1024px){
+    .person_item{
+        max-width: 476px;
+    }
+    .historians__list{
+        max-width: 100%;
+    }
+    .articles__list{
+        max-width: 100%; 
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .menu__list{
+        flex-wrap: wrap; 
+        justify-content: space-evenly;
+    } 
+    .menu__link{
+        text-align: center;
+        display: block;
+width: 250px;
+    } 
+    .person_item{
+        max-width: 350px;  
+    }
+}
